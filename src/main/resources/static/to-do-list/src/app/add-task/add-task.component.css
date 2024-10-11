@@ -1,0 +1,36 @@
+.contenedor__tarea
+{
+  width: 100%;
+  display: flex;
+
+}
+.form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.tarea__input{
+  width: 100%;
+  height: 100%;
+}
+.conten{
+  width: 30vw;
+  height: 80vh;
+  padding: 2em;
+  border-radius: 8px;
+  overflow: hidden;           /* Oculta el texto que se desborda */
+  overflow-y: auto;       /* Activar el scroll vertical cuando el contenido sea muy grande */
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+  background-color: white;
+
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.custom__button{
+  background-color: #333;
+}
+.subtitle{
+  font-size: 2.5em;
+}

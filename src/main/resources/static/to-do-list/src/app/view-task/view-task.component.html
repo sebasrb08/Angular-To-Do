@@ -1,0 +1,19 @@
+<div class="contenedor__vista">
+
+  <table  class="tabla__tarea" >
+  <ng-container   *ngFor="let list of task" >
+    <div class="vista__tarea">
+
+      <mat-checkbox color="primary"></mat-checkbox>
+
+      <td class="tarea__text">{{list.title}}</td>
+
+      <button  (click)=deleteTask(list.id)  class="custom__button" type="button" mat-mini-fab  aria-label="Delete task"  >
+        <mat-icon>delete</mat-icon>
+      </button>
+      <app-update-task [task2]="task" [getId]="list.id"/>
+
+    </div>
+  </ng-container>
+</table>
+</div>

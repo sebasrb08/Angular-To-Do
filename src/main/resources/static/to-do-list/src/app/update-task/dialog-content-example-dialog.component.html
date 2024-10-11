@@ -1,0 +1,13 @@
+<form [formGroup]="formularioContacto">
+  <h1 mat-dialog-title>Actualizar</h1>
+  <div mat-dialog-content>
+    <p>Actualizar tarea</p>
+    <mat-form-field  class = "tarea__input" >
+      <input  matInput formControlName="tarea"  >
+    </mat-form-field >
+  </div>
+  <div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button cdkFocusInitial (click)="sendUpdate()">Ok</button>
+</div>
+</form>

@@ -1,0 +1,20 @@
+<div class="conten">
+  <h2 class="subtitle">To Do</h2>
+  <div class="contenedor__tarea">
+    <form [formGroup]="formularioContacto"  class = "form"  >
+      <mat-form-field  class = "tarea__input" >
+        <mat-label>Tarea</mat-label>
+        <input  matInput   formControlName="tarea" >
+      </mat-form-field >
+
+      <div class="example-flex-container">
+        <div class="button__add">
+          <button class="custom__button" (click)="submit()"  type="submit"  mat-fab aria-label=" icon button with a add icon">
+            <mat-icon>add</mat-icon>
+          </button>
+        </div>
+      </div >
+    </form >
+  </div>
+  <app-view-task [task]="tarea"  ></app-view-task>
+</div>
